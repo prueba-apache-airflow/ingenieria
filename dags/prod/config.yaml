@@ -1,0 +1,12 @@
+airflow:
+  prod: False
+  time_zone: America/Lima
+  file_json: "/usr/local/airflow/dags/prod/json"
+  file_json_backup: "/usr/local/airflow/dags/prod/json_backup"
+  max_days_backup: 30
+
+api:
+  prod:
+    base_url: http://ms-bi-airflow.nirvana-qa.svc.cluster.local:8090
+  desa:
+    base_url: http://ms-bi-airflow:8090
